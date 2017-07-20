@@ -1,3 +1,33 @@
-p {
-  color: red;
+$orange: #F9461C;
+$yellow: #F2AF00;
+$grey: #4D4F53;
+
+.orange {
+  color: $orange;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.grey {
+  color: $grey;
+}
+
+@font-face {
+  font-family: gotham-rounded-light;
+  src: url('../fonts/gotham_rounded_light.woff');
+}
+
+@font-face {
+  font-family: gotham-rounded-medium;
+  src: url('../fonts/gotham_rounded_medium.woff');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: gotham-rounded-medium;
+}
+
+p, body {
+  font-family: gotham-rounded-light;
 }
