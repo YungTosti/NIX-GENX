@@ -6,6 +6,11 @@ var gulp = require('gulp');
 var nunjucksRender = require('gulp-nunjucks-render');
 
 
+gulp.task('build', [
+    'build-html'
+]);
+
+
 gulp.task('build-html', function() {
     return gulp.src('src/pages/*')
         .pipe(nunjucksRender({
