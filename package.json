@@ -1,0 +1,12 @@
+{
+  "name": "nix-genx",
+  "version": "1.0.0",
+  "description": "Nix geen Gen-X",
+  "main": "index.js",
+  "author": "YungTosti",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-nunjucks-render": "^2.2.1"
+  }
+}
