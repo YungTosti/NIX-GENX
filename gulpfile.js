@@ -10,6 +10,8 @@ var browserSync = require('browser-sync').create();
 gulp.task('build', [
     'build-html',
     'build-sass',
+    'build-images',
+    'build-fonts',
 ]);
 
 
