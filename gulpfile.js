@@ -32,6 +32,11 @@ gulp.task('build-fonts', function() {
         .pipe(gulp.dest('build/assets/fonts/'))
 })
 
+gulp.task('build-images', function() {
+    return gulp.src('src/assets/images/**')
+        .pipe(gulp.dest('build/assets/images/'))
+})
+
 gulp.task('serve', function() {
     browserSync.init({
         server: {
