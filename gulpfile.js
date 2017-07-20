@@ -27,6 +27,11 @@ gulp.task('build-sass', function() {
         .pipe(gulp.dest('build/assets/css/'))
 });
 
+gulp.task('build-fonts', function() {
+    return gulp.src('src/assets/fonts/**')
+        .pipe(gulp.dest('build/assets/fonts/'))
+})
+
 gulp.task('serve', function() {
     browserSync.init({
         server: {
