@@ -4,6 +4,7 @@ $yellow: #F2AF00;
 $yellow-background: #ffc300;
 $grey: #4D4F53;
 $blue: #273D8D;
+$white: #fff;
 
 .orange {
   color: $orange;
@@ -53,62 +54,63 @@ p, body {
   font-family: gotham-rounded-light;
 }
 
-.navbar.navbar-genx {
-  border: 0px;
-  border-radius: 0px;
-  background-color: transparent;
-  overflow: hidden;
+/* Refactor with counter rotating */
 
-  .navbar-nav {
-    margin-top: 5px;
-  }
-
-  .navbar-brand {
-    padding: 0;
-    height: 100px;
-
-    img {
-      margin-top: -20px;
-      max-height: 100px;
-    }
-  }
+.logo {
+  max-height: 100px;
+  float: right;
 }
 
-.x-section {
-  z-index: 10;
-  padding-top: 50px;
-  background-color: #fff;
+.section-horizontal {
+  width: 100%;
+  display: inline-block;
+  padding: 50px 10px 75px 10px;
 
-  &.x-section-1 {
-    transform: skewY(-2deg);
+  &.section-navbar {
+    padding: 0px 20px;
+    text-align: center;
+    display: inline-block;
   }
 
-  &.x-section-2 {
+  &.section-right-down {
     transform: skewY(2deg);
+
+    .counter-section {
+      transform: skewY(-2deg);
+    }
   }
 
-  &.yellow-background {
+  &.section-left-down {
+    transform: skewY(-2deg);
+
+    .counter-section {
+      transform: skewY(2deg);
+    }
+  }
+
+  &.section-bg-yellow {
     background-color: $yellow-background;
   }
 
-  &.blue-background {
+  &.section-bg-blue {
     background-image: radial-gradient(circle at 50% 50%, #a1a5af, #304a8f);
   }
 
-}
+  &.section-bg-white {
+    background-color: $white;
+  }
 
-.background-2 {
-  z-index: 0;
-  background-image: url('../images/background-2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+  &.section-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 
-.background-3 {
-  z-index: 0;
-  background-image: url('../images/background-3.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  &.section-bg-2 {
+    background-image: url('../images/background-2.jpg');
+  }
+
+  &.section-bg-3 {
+    background-image: url('../images/background-3.jpg');
+  }
 }
