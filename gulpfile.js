@@ -3,7 +3,6 @@
  */
 
 var gulp = require('gulp');
-var nunjucksRender = require('gulp-nunjucks-render');
 var gulpSass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 
@@ -17,9 +16,6 @@ gulp.task('build', [
 
 gulp.task('build-html', function() {
     return gulp.src('src/pages/**')
-        .pipe(nunjucksRender({
-            path: ['src/components/']
-        }))
         .pipe(gulp.dest('build/'))
 });
 
