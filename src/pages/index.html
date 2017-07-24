@@ -26,9 +26,35 @@
 
 </script>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div class="section-horizontal section-navbar section-bg-white">
     <img class="logo" src="assets/images/nix-genx-logo.jpeg" />
 </div>
+
+<script>window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+    if (d.getElementById(id)) return t;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+
+    t._e = [];
+    t.ready = function(f) {
+        t._e.push(f);
+    };
+
+    return t;
+}(document, "script", "twitter-wjs"));</script>
 
 <div class="section-horizontal section-bg section-bg-2 section-right-down" style="margin-top: -25px;">
     <div class="counter-section text-center">
@@ -110,8 +136,14 @@
         <div class="col-md-6 text-center">
             <p>Made with <i class="fa fa-heart" style="color: red;"></i> by <a target="_blank" href="https://twitter.com/YungTosti">YungTosti</a></p>
         </div>
-        <div class="col-md-6">
-            
+
+        <div class="col-md-6 text-center">
+            <div class="fb-share-button" data-href="http://nix-genx.nl" data-layout="box_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fnix-genx.nl%2F&amp;src=sdkpreparse">Share</a></div>
+
+            <a class="twitter-share-button"
+               href="https://twitter.com/intent/tweet?text=Nix%20GenX%20-%20Dat%20is%20de%20afspraak%21%20http%3A%2F%2Fnix-genx.nl%20-%20%40MinPres">
+                Tweet
+            </a>
         </div>
     </div>
 </div>
